@@ -2,63 +2,53 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cricket Tadka</title>
-<style>
-:root{--green:#65ff9a;--bg:#06120e;--panel:#10251c}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:#f5fff8;font-family:Arial,sans-serif}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#091a12;border-bottom:1px solid #24513a;position:sticky;top:0}
-.logo{font-size:24px;font-weight:800;color:var(--green)}
-nav a{color:#e8fff0;text-decoration:none;margin-left:18px}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:55px 20px;overflow:hidden;background:radial-gradient(ellipse at 50% 70%,#176b40 0%,#0b2b1b 35%,#06120e 72%)}
-.hero-inner{max-width:850px}
-.tag{color:var(--green);letter-spacing:3px;font-size:12px;font-weight:bold}
-h1{font-size:clamp(38px,7vw,76px);line-height:1.02;margin:18px 0}
-h1 span{color:var(--green)}
-p{color:#b9cfc1;line-height:1.7}
-.btn{display:inline-block;background:var(--green);color:#062013;padding:14px 22px;border-radius:9px;text-decoration:none;font-weight:bold;margin-top:14px}
-.ball{width:110px;height:110px;margin:32px auto 0;border-radius:50%;background:radial-gradient(circle at 30% 25%,#ff9999,#cf172e 55%,#610916);box-shadow:0 0 45px #ff315566,inset -12px -12px 20px #3c0712;position:relative;animation:float 4s ease-in-out infinite;transform:rotate(-20deg)}
-.ball:after{content:"";position:absolute;left:48px;top:5px;height:100px;width:2px;background:#fff4d9;transform:rotate(22deg);border-radius:50%;box-shadow:4px 0 0 #ffffff55}
-@keyframes float{0%,100%{transform:translateY(0) rotate(-20deg)}50%{transform:translateY(-15px) rotate(10deg)}}
-section.content{padding:55px 7%;max-width:1200px;margin:auto}
-.section-title{text-align:center;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:linear-gradient(145deg,#132e21,#0b1a13);border:1px solid #28523a;border-radius:16px;padding:22px}
-.card h3{margin-top:0;color:var(--green)}
-.pill{display:inline-block;background:#1d4730;color:#baffd0;padding:6px 10px;border-radius:20px;font-size:12px}
-.note{font-size:13px;color:#9eb6a6}
-footer{text-align:center;padding:28px;border-top:1px solid #1e3e2d;color:#9eb6a6}
-@media(max-width:600px){nav{padding:15px 5%}nav a{margin-left:9px;font-size:13px}.logo{font-size:20px}.hero{min-height:70vh}}
-</style>
+<meta name="description" content="Cricket Tadka — cricket match previews, team insights and player statistics.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><div class="logo">🏏 Cricket Tadka</div><div><a href="#matches">Matches</a><a href="#analysis">Analysis</a></div></nav>
-<header class="hero">
-  <div class="hero-inner">
-    <div class="tag">CRICKET • INSIGHTS • ANALYSIS</div>
-    <h1>Cricket, <span>Beyond</span><br>Boundaries.</h1>
-    <p>Match previews, team form and player statistics — all in one place.</p>
-    <a class="btn" href="#matches">Explore Match Analysis ↓</a>
-    <div class="ball" aria-label="Animated cricket ball"></div>
-  </div>
+<header class="nav">
+  <a class="logo" href="#">🏏 Cricket Tadka</a>
+  <nav><a href="#matches">Matches</a><a href="#insights">Insights</a><a href="#about">About</a></nav>
 </header>
-<section class="content" id="matches">
-  <div class="section-title"><div class="tag">MATCH CENTRE</div><h2>Featured Match Previews</h2><p>Demo cards — update these with verified match information before publishing.</p></div>
-  <div class="grid">
-    <article class="card"><span class="pill">MATCH PREVIEW</span><h3>Team A vs Team B</h3><p>Compare recent form, venue conditions and available player statistics before a match.</p><p class="note">Sample content • Not a live fixture</p></article>
-    <article class="card"><span class="pill">TEAM ANALYSIS</span><h3>Team Form</h3><p>Review recent results, batting depth, bowling options and head-to-head records.</p><p class="note">Add verified statistics here</p></article>
-    <article class="card"><span class="pill">PLAYER STATS</span><h3>Players to Watch</h3><p>Compare recent runs, wickets, averages and strike rates using reliable data.</p><p class="note">Add current player data here</p></article>
-  </div>
-</section>
-<section class="content" id="analysis">
-  <div class="section-title"><div class="tag">HOW WE ANALYSE</div><h2>Data-led cricket insights</h2></div>
-  <div class="grid">
-    <article class="card"><h3>📊 Recent Performance</h3><p>Use recent match results and player performance to understand form.</p></article>
-    <article class="card"><h3>🏟️ Venue Factors</h3><p>Consider pitch history, ground dimensions and conditions when data is available.</p></article>
-    <article class="card"><h3>🔎 Balanced Preview</h3><p>Explain uncertainty clearly. Analysis is informational and does not guarantee results.</p></article>
-  </div>
-</section>
-<footer>© 2026 Cricket Tadka • Cricket analysis for information and entertainment.</footer>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">THE GAME, WITH MORE INSIGHT</p>
+      <h1>Every match<br>has a <span>story.</span></h1>
+      <p class="lead">Explore cricket previews, team form and player stats in one place.</p>
+      <a class="button" href="#matches">Explore Cricket <span>↗</span></a>
+      <p class="disclaimer">Informational analysis only. Demo content is illustrative, not live match data.</p>
+    </div>
+    <div class="visual" aria-label="Stylized cricket stadium and animated ball">
+      <div class="halo"></div><div class="orbit"></div>
+      <div class="stadium"><div class="stands"></div><div class="stands inner"></div><div class="field"><div class="pitch"></div><i class="crease c1"></i><i class="crease c2"></i></div></div>
+      <div class="cricket-ball"><span></span></div>
+      <div class="visual-label">MATCH DAY <b>✦</b></div>
+    </div>
+  </section>
+  <section class="ticker"><span>✦ MATCH PREVIEWS</span><span>✦ TEAM FORM</span><span>✦ PLAYER STATS</span><span>✦ CRICKET INSIGHTS</span></section>
+  <section class="section" id="matches">
+    <div class="section-head"><div><p class="eyebrow">MATCH CENTRE</p><h2>Featured <span>analysis</span></h2></div><p>Starter examples — replace with verified current fixtures and statistics.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-top"><span class="chip">MATCH PREVIEW</span><span>DEMO</span></div><div class="versus"><div class="team-icon blue">A</div><b>VS</b><div class="team-icon gold">B</div></div><h3>Team A vs Team B</h3><p>Compare recent form, team balance and venue conditions before a match.</p><button class="text-button" data-title="Match Preview" data-copy="Use verified recent results, player availability and venue information to build a balanced match preview.">Read preview ↗</button></article>
+      <article class="card"><div class="card-top"><span class="chip purple">TEAM FORM</span><span>INSIGHTS</span></div><div class="big-icon">📊</div><h3>Team performance</h3><p>Review recent results, batting depth, bowling options and head-to-head records.</p><button class="text-button" data-title="Team Performance" data-copy="Compare the teams using consistent statistics from reliable sources. Avoid treating historical trends as guarantees.">Explore insights ↗</button></article>
+      <article class="card"><div class="card-top"><span class="chip orange">PLAYER WATCH</span><span>STATS</span></div><div class="big-icon">🏏</div><h3>Players to watch</h3><p>Compare runs, wickets, averages and strike rates with clear context.</p><button class="text-button" data-title="Player Statistics" data-copy="Add verified player statistics and the date or competition they relate to, so visitors understand the context.">View stats ↗</button></article>
+    </div>
+  </section>
+  <section class="section insights" id="insights">
+    <div class="section-head"><div><p class="eyebrow">READ THE GAME</p><h2>What shapes a <span>match?</span></h2></div></div>
+    <div class="cards three">
+      <article class="mini-card"><div>01 / FORM</div><h3>Recent performance</h3><p>Recent results can provide context, but they never guarantee what happens next.</p></article>
+      <article class="mini-card"><div>02 / CONDITIONS</div><h3>Pitch & venue</h3><p>Use reliable pitch reports, weather information and ground history where available.</p></article>
+      <article class="mini-card"><div>03 / MATCHUPS</div><h3>Team balance</h3><p>Consider player roles, bowling styles and squad availability in your analysis.</p></article>
+    </div>
+  </section>
+  <section class="bottom" id="about"><div><p class="eyebrow">CRICKET TADKA</p><h2>Love the game.<br><span>Know the details.</span></h2></div><a class="button" href="#matches">Back to matches ↑</a></section>
+</main>
+<footer><a class="logo" href="#">🏏 Cricket Tadka</a><p>Cricket analysis and information. Sample content is not live data.</p><span>© <span id="year"></span> Cricket Tadka</span></footer>
+<dialog id="modal"><button class="close" aria-label="Close">×</button><p class="eyebrow">CRICKET TADKA</p><h2 id="modal-title"></h2><p id="modal-copy"></p><button class="button close-action">Got it</button></dialog>
+<script src="script.js"></script>
 </body>
 </html>
